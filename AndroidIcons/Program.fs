@@ -113,8 +113,14 @@ let icons = [
     Solid, '\uf67b', +0, +0, "meditation"
     Solid, '\uf095', +0, +0, "phone"
     Solid, '\uf0eb', +0, +0, "light-bulb"
+    Solid, '\ue012', +0, +0, "house-signal"
     Solid, '\uf268', +0, +0, "chrome"
-    Solid, '\uf0ae', +0, +0, "checklist"
+    Solid, '\uf00c', +0, +0, "check"
+    Solid, '\ue533', +0, +0, "people-group"
+    Solid, '\uf658', +0, +0, "envelope-open-text"
+    Solid, '\uf2f2', +0, +0, "stopwatch"
+    Solid, '\uf03d', +0, +0, "video"
+    Solid, '\ue55b', +0, +0, "plug-circle-bolt"
     Solid, '\uf4fd', +3, +0, "user-clock"
 ]
 
@@ -141,3 +147,5 @@ for set, icon, xFix, yFix, name in icons do
 let background = rect 1080 2412 "#0b2e5b"
 File.WriteAllText(targetDirSvg </> "background.svg", background)
 pngExport (targetDirSvg </> "background.svg") (targetDirPng </> "background.png")
+
+printfn "Done"
