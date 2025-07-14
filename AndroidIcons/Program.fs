@@ -30,14 +30,14 @@ let rect width height fill =
     string (
         XDocument(
             XElement(
-                ! "svg",
+                !"svg",
                 [
                     XAttribute("width", width)
                     XAttribute("height", height)
                 ],
                 [
                     XElement(
-                        ! "rect",
+                        !"rect",
                         [
                             XAttribute("x", 0)
                             XAttribute("y", 0)
@@ -56,14 +56,14 @@ let svg icon fontFamily xFix yFix =
     string (
         XDocument(
             XElement(
-                ! "svg",
+                !"svg",
                 [
                     XAttribute("width", 512)
                     XAttribute("height", 512)
                 ],
                 [
                     XElement(
-                        ! "rect",
+                        !"rect",
                         [
                             XAttribute("width", 512)
                             XAttribute("height", 512)
@@ -73,7 +73,7 @@ let svg icon fontFamily xFix yFix =
                         ]
                     )
                     XElement(
-                        ! "text",
+                        !"text",
                         [
                             XAttribute("x", (256 + 5 * xFix).ToString())
                             XAttribute("y", (282 + 5 * yFix).ToString())
